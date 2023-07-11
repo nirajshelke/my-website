@@ -1,0 +1,123 @@
+@media (max-width:480px) {
+    .container {
+        padding : 0 2%;
+    }
+}
+@media (min-width:480px) and (max-width:768px) {
+    .container {
+        padding : 0 2%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        padding : 0 5%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        padding : 0 10%;
+    }
+}
+
+.slds-card {
+    position :initial;
+}
+
+.slds-card__header h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.icon-briefcase {
+    height:35px;
+    width:35px;
+}
+
+.designation {
+    font-size: 1rem;
+    color: #747474;
+}
+.organization {
+    font-size: 1.2rem;
+    color: #5c788f;
+    font-weight: bold;
+}
+.duration {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #747474;
+}
+.description {
+    font-size: 0.8rem;
+    color: #5a5959;
+    text-align: justify;
+}
+.table_border {
+    border : none;
+    max-width : 100%;
+    
+}
+.table_border tr {
+    border : none;
+    padding-left: 0;
+}
+
+.table_border td {
+    border : none;
+    padding-left: 0;
+    word-break: break-all;
+}
+
+.check_icon {
+    height: 15px;
+    width: 15px;
+    background-color: #5755d9; 
+    border-radius:50%;
+    padding : 2px
+}
+
+.icon-clock {
+    height: 12px;
+    width: 12px;
+}
+
+.outside_circle {
+    height: 15px;
+    width: 15px;
+    background-color: #5755d9;
+    border-radius: 50%;
+}
+
+.slds-table {
+    max-width : 100%;
+    table-layout: fixed;
+}
+
+.slds-table td{
+   position: initial;
+}
+
+.inner_circle {
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+ul.fadeIn {
+    list-style-type: disc;
+    animation: fadeInAnimation 1s linear;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

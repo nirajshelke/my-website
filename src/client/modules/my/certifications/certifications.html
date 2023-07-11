@@ -1,0 +1,51 @@
+<template>
+    <div class="slds-text-heading_medium slds-m-horizontal_small slds-p-vertical_medium">
+        Certifications
+    </div>
+    <div class="slds-grid slds-gutters slds-m-horizontal_small slds-wrap slds-p-bottom_large slds-p-top_medium">
+        <template for:each={certificates} for:item="cert">
+            <div key={cert.id} class="slds-col slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_4-of-12 slds-large-size_3-of-12">
+                <article class="slds-card slds-m-around_small">
+                    <div class="slds-card__body slds-card__body_inner">
+                        <a href={cert.url} target="_blank">
+                            <img src={cert.pic_url}/>
+                        </a>
+                        <div class="heading slds-m-top_small slds-align_absolute-center">
+                            {cert.name}
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </template>
+    </div>
+
+
+    <!--<template for:each={certificates} for:item="cert">
+        <div key={cert.id} class="slds-align_absolute-center">
+                <article data-id={cert.id} class="slds-card slds-m-around_small">
+                    <div class="slds-card__body slds-card__body_inner">
+                        <a href={cert.url} target="_blank">
+                            <img src={cert.pic_url} />
+                        </a>
+                        <div class="heading slds-m-top_small slds-align_absolute-center">
+                            {cert.name}
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </template>
+    <div class="slds-carousel__stage">
+        <div class="slds-carousel__panels slds-align_absolute-center">
+            <ul class="slds-carousel__indicators" role="tablist">
+                <template for:each={certificates} for:item="cert">
+                    <li key={cert.id} class="slds-carousel__indicator" role="presentation">
+                        <a data-id="radio" data-index={cert.id} class="slds-carousel__indicator-action" role="tab" tabindex={cert.tabindex}
+                            aria-selected="false" aria-controls="content-id-73">
+                            <span class="slds-assistive-text"></span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>-->
+</template>

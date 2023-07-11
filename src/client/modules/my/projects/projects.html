@@ -1,0 +1,52 @@
+<template>
+    <div class="slds-text-heading_medium slds-m-horizontal_small slds-p-top_medium">
+        Projects
+    </div>
+    <div class="container-fluid slds-p-around_small">
+        <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical-stretch">
+            <template for:each={projects} for:item="project">
+                <div key={project.Id} class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12 slds-m-top_small">
+                    <article class="slds-card">
+                        <div class="slds-card__header slds-grid">
+                          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                              <span class="slds-icon_container slds-icon-standard-code-playground" title={project.Name}>
+                                <img src="./resources/slds-icons/standard/code_playground_60.png" style="height:30px;width:30px;"/>
+                                <span class="slds-assistive-text">{project.Name}</span>
+                              </span>
+                            </div>
+                            <div class="slds-media__body">
+                              <h2 class="slds-card__header-title">
+                                  <span>{project.Name}</span>
+                              </h2>
+                            </div>
+                          </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <div class="description">
+                                {project.description}
+                            </div>
+
+                            <div class="bottom">
+                                <div class="technologies slds-m-top_small">
+                                    <span>
+                                        <img src="./resources/bootstrap-icons/icons/laptop-fill.svg"/> <b class="slds-m-left_small" style="color:rgb(77, 122, 181);">Technologies: </b> {project.Technologies}
+                                    </span>
+                                </div>
+    
+                                <div class="slds-m-top_medium">
+                                    <span class="project_link">
+                                         <a href={project.Link}>
+                                            Github Link
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                      </div>
+                    </article>
+                </div>
+            </template>
+        </div>
+
+    </div>
+</template>

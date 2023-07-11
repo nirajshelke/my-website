@@ -1,0 +1,71 @@
+@media (max-width: 767px) {
+    .horizontalTabs {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .body {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .fixed {
+        position: fixed;   
+        top : 100px;
+        right : 0px;
+        width : 100%;
+    }
+}
+
+nav {
+    background-color: #2b2b2b !important;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.vertical_nav {
+    background-color: #2b2b2b !important;
+    color: white;
+    border-bottom: dashed #1d1d1d;
+}
+
+.brand {
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+}
+
+.menu-button {
+    height:40px;
+    width:40px;
+}
+
+.fixed {
+    position: fixed;   
+    top : 100px;
+    right : 0px;
+}
+
+.anchor:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.header {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(../resources/Salesforce_Pic.png) no-repeat top center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}

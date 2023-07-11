@@ -1,0 +1,45 @@
+.slds-card {
+    position :initial;
+}
+.slds-text-heading_medium {
+    color: gray;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+article.slds-card {
+    height: 100%;
+    min-height:200px;
+}
+.slds-card__header-title{
+    font-size: 1.2rem;
+    color:rgb(77, 122, 181);
+}
+.description {
+    color: #747474;
+    font-size: 0.85rem;
+    text-align: justify;
+}
+.project_link {
+    color: #747474;
+    font-size: 1rem;
+    text-align: justify;
+}
+.technologies {
+    color: #747474;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+article .bottom {
+    bottom: 0;
+}
+
+@media (max-width:480px) {
+    .container-fluid {
+        padding : 0 2%;
+    }
+}
+@media (min-width:480px) and (max-width:768px) {
+    .container-fluid {
+        padding : 0 2%;
+    }
+}

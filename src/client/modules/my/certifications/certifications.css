@@ -1,0 +1,54 @@
+img {
+    height: 100%;
+    width: 100%;
+    /*animation: fadeInAnimation 1s linear;*/
+}
+
+.slds-card {
+    position :initial;
+}
+  
+  /* @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@media (min-width:768px) {
+    img {
+        height: 500px;
+        width: 600px;
+        animation: fadeInAnimation 1s linear;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+    img {
+        height: 300px;
+        width: 400px;
+        animation: fadeInAnimation 1s linear;
+    }
+}
+
+@media (max-width:480px) {
+    img {
+        height: 100%;
+        width: 100%;
+        animation: fadeInAnimation 1s linear;
+    }
+} */
+
+.slds-text-heading_medium {
+    color: gray;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(77, 122, 181);
+}

@@ -1,0 +1,12 @@
+import { LightningElement } from 'lwc';
+const PROJECTS = [
+    {Id:1, Name: 'Live Record Viewers', Link: 'javascript:void(0)', description:"This tool displays the SF users who are currently working on / viewing any record. This tools is really helpful in the in the fast paced environments where there are multiple people working on same record.", Technologies: 'Salesforce, Apex, Lightning Web Components, Platform Events, JavaScript, HTML, CSS, SLDS'},
+    {Id:2, Name: 'Advanced Data Loader', Link: 'https://github.com/nirajshelke/Advanced-Data-Loader', description:"It's a tool built on Force.com platform, which Supports all DML operations like data loader and additionally it provides an Operations to bulk Import Custom Metadata Types. It gives user an ability to schedule data Load activities and generates Success and Error files after execution.", Technologies: 'Salesforce, Apex, Lightning Web Components, JavaScript, HTML, CSS, SLDS'},
+    {Id:3, Name: 'Advanced SOQL Builder', Link: 'https://github.com/nirajshelke/AdvancedSoqlBuilder', description:"It's a advanced SOQL query builder tool which is built on Force.com using lwc and Apex which Provides provides ability to query data from salesforce. it provides inline editing of the Queried data and also provides an ability to export data in csv.", Technologies: 'Salesforce, Apex, Apex REST Api, REST Services, JavaScript, Lightning Web Components, HTML, CSS, SLDS'},
+    {Id:4, Name: 'Covid-19 Vaccine Tracker', Link: 'https://github.com/nirajshelke/Covid19-Vaccine-Tracker', description:"It's an application built on Force.com platform, sends notification on mobile about vaccine availabily in your area.", Technologies: 'Salesforce, Apex, Asyncronous Apex, REST Services, Cowin Public API'},
+    {Id:5, Name: 'Classic Snake Game', Link: 'https://github.com/nirajshelke/classic-snake-game', description:"It's a classic snake game built using LWC.", Technologies: 'Lightning Web Components, JavaScript, HTML, CSS, SLDS'},
+    {Id:6, Name: 'Resume Using LWC', Link: 'https://github.com/nirajshelke/portfolio', description:"Responsive resume web page built using LWC Open source.", Technologies: 'Lightning Web Components, JavaScript, HTML, CSS, SLDS, Bootsrap'}
+]
+export default class Projects extends LightningElement {
+    projects = PROJECTS;
+}
